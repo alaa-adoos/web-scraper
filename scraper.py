@@ -26,7 +26,7 @@ def get_citations_needed_report(url):
     Args:
         url (stirng): the url of the website
     Returns:
-        string: report of citations needed
+        string:report of citations needed
     """
     r=requests.get(url)
     soup=BeautifulSoup(r.content,'html.parser')
